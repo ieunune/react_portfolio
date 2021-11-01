@@ -58,7 +58,7 @@ class App extends Component{
             </Slide>
 
             <Slide index={2}>
-                2 page
+                2 page 
             </Slide>
 
             <Slide index={3}>
