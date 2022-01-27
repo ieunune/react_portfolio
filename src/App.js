@@ -33,17 +33,29 @@ class App extends Component{
           <Slider>
             <Slide index={0}>
               <div className="main">
-                <div className="container-fluid">
                   <span className="fa fa-check-circle react-msg" aria-hidden="true"> 본 사이트는 React로 제작되었습니다.</span>
                   {this.guideMsg()}
 
-                  <ButtonNext className="to-bottom-first">
-                    {this.offsetWidth()}
-                    <br />
-                    <span className="fa fa-angle-double-down" aria-hidden="true"></span>
-                  </ButtonNext>
+                  <div className="container-fluid">
+                      <div className='main-content'>
+                        <p>안녕하십니까</p>
+                        <h1>백엔드 개발자 박은우의 포트폴리오 입니다.</h1>
+                        <p>
+                          <a className="btn btn-dark" href="https//naver.com">GIT</a>
+                          {/* <a className="btn btn-dark" href="https://github.com/ieunune" role="button" rel="noreferrer" target="_blank">
+                            <span className="fa fa-github" aria-hidden="true"/>
+                              &nbsp; Github
+                          </a> */}
+                        </p>
+                      </div>
+                      <ButtonNext className="to-bottom-first">
+                        {this.offsetWidth()}
+                        <br/>
+                        <span className="fa fa-angle-double-down" aria-hidden="true"></span>
+                      </ButtonNext>
+
+                  </div>
                 </div>
-              </div>
             </Slide>
 
             <Slide index={1}>
