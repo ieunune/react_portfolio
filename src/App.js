@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonNext } from 'pure-react-carousel';
 
+import Page1 from './component/page_1';
+import Page2 from './component/page_2';
+import Page3 from './component/page_3';
+import Page4 from './component/page_4';
 import './App.css';
 
 class App extends Component{
@@ -26,7 +30,7 @@ class App extends Component{
       <CarouselProvider
           visibleSlides={1}
           orientation="vertical"
-          totalSlides={6}
+          totalSlides={5}
           step={1}
           touchEnabled={false}
         >
@@ -59,33 +63,20 @@ class App extends Component{
             </Slide>
 
             <Slide index={1}>
-              <div className="page1">
-                <div className="container-fluid">
-                    <ButtonBack className="to-back">
-                      <span className="fa fa-angle-double-up" aria-hidden="true"></span>
-                    </ButtonBack>
-                  1 page
-                </div>
-              </div>
+              <Page1/>
             </Slide>
 
             <Slide index={2}>
-                2 page 
+              <Page2/>
             </Slide>
 
             <Slide index={3}>
-                3 page
+              <Page3/>
             </Slide>
 
             <Slide index={4}>
-                4 page
+              <Page4/>
             </Slide>
-
-            <Slide index={5}>
-                5 page
-            </Slide>
-
-
           </Slider>
         </CarouselProvider>
     </div>

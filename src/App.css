@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 
+html {
+  -ms-overflow-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
 }
 
 body::-webkit-scrollbar {
-  width: 0 !important; }
-
-html {
-  -ms-overflow-style: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  width: 0 !important; 
 }
 
 h1 {
@@ -18,22 +19,101 @@ h1 {
   font-size: 1.9rem; 
 }
 
+.App {
+  min-height: 101vh;
+  overflow: hidden;
+  padding: 5px;
+  background: #1a1a1a; 
+}
+
+ul:focus {
+  outline: none; }
+
+li:focus {
+  outline: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+
 .guide-msg {
   position: absolute;
-  top: 2%;
+  top: 2.5%;
   right: 1%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #ebe6e6; }
 
 .react-msg {
     position: absolute;
     top: 1%;
     right: 1%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #ebe6e6; }
 
 .touch-guide {
       font-size: 0.8rem; }
+
+/* Navigater css start */
+.to-top {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  cursor: pointer; }
+
+.to-top-project {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  cursor: pointer; }
+
+.to-bottom {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  bottom: 1%;
+  left: 0%;
+  cursor: pointer; }
+
+.to-bottom-project {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  cursor: pointer; }
+
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .to-bottom-project {
+      background: none;
+      color: #fefefe;
+      border: none;
+      width: 100%;
+      height: 10%;
+      position: absolute;
+      bottom: -35%;
+      left: 0%;
+      cursor: pointer; 
+    } 
+  }
+
 
 .to-bottom-first {
   background: none;
@@ -47,6 +127,8 @@ h1 {
   left: 0%;
   cursor: pointer; }
 
+/* Navigater css end */  
+
   .main {
     position: relative;
     width: 100%;
@@ -59,7 +141,7 @@ h1 {
     background-color: #1a1a1a;
     overflow: auto; }
   
-  .page-2 {
+  .page_1 {
     position: relative;
     height: 101vh;
     text-align: center;
@@ -69,8 +151,8 @@ h1 {
     color: #fefefe;
     background-color: #1a1a1a;
     overflow: auto; }
-  
-  .page-3 {
+
+  .page_2 {
     height: 101vh;
     position: relative;
     text-align: center;
@@ -80,8 +162,8 @@ h1 {
     color: #fefefe;
     background-color: #1a1a1a;
     overflow: auto; }
-  
-  .page-4 {
+      
+  .page_3 {
     height: 101vh;
     position: relative;
     text-align: center;
@@ -91,20 +173,8 @@ h1 {
     color: #fefefe;
     background-color: #1a1a1a;
     overflow: auto; }
-  
-  .page-5 {
-    height: 101vh;
-    position: relative;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fefefe;
-    background-color: #1a1a1a;
-    overflow: auto;
-    overflow-x: hidden; }
-  
-  .page-6 {
+      
+  .page_4 {
     height: 101vh;
     position: relative;
     text-align: center;
@@ -114,7 +184,7 @@ h1 {
     color: #fefefe;
     background-color: #1a1a1a;
     overflow: auto; }
-  
+
   .page-1-p {
     font-size: 1.6rem; }
 
