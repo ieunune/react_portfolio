@@ -100,6 +100,7 @@ ul {
   left: 0%;
   cursor: pointer; }
 
+
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .to-bottom-project {
       background: none;
@@ -125,7 +126,20 @@ ul {
   position: absolute;
   bottom: 1%;
   left: 0%;
-  cursor: pointer; }
+  cursor: pointer; 
+}
+
+  .to-first {
+    background: none;
+    color: #fefefe;
+    border: none;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+    cursor: pointer; 
+  }
 
 /* Navigater css end */  
 

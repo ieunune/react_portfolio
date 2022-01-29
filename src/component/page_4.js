@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ButtonBack } from 'pure-react-carousel';
+import { ButtonBack, Dot } from 'pure-react-carousel';
 
 class Page_4 extends Component {
     render() {
@@ -11,6 +11,11 @@ class Page_4 extends Component {
             <div className='container-fluid'>
             page4
             </div>
+            <Dot slide={0} className="to-first">
+                <span className="touch-guide">처음 페이지로</span>
+                    <br />
+                <span className="fa fa-step-backward" aria-hidden="true"></span>
+            </Dot>
         </div>
       );
     }
