@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ieunune.github.io/",
+  "homepage": "https://ieunune.github.io/react_portfolio",
   "name": "react_portfolio",
   "version": "0.1.0",
   "private": true,
@@ -19,8 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run bulid",
-    "deploy": "gh-pages -d bulid"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
