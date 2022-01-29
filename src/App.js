@@ -43,13 +43,13 @@ class App extends Component{
                   <div className="container-fluid">
                       <div className='main-content'>
                         <p>안녕하십니까</p>
-                        <h1>백엔드 개발자 박은우의 포트폴리오 입니다.</h1>
+                        <h1>백엔드 개발자 <strong>박은우</strong>의 포트폴리오 입니다.</h1>
                         <p>
-                          <a className="btn btn-dark" href="https//naver.com">GIT</a>
-                          {/* <a className="btn btn-dark" href="https://github.com/ieunune" role="button" rel="noreferrer" target="_blank">
+                          {/* <a className="btn btn-dark" href="https://github.com/ieunune/">GIT</a> */}
+                          <a className="btn btn-dark" href="https://github.com/ieunune" role="button" rel="noreferrer" target="_blank">
                             <span className="fa fa-github" aria-hidden="true"/>
                               &nbsp; Github
-                          </a> */}
+                          </a>
                         </p>
                       </div>
                       <ButtonNext className="to-bottom-first">
