@@ -1,22 +1,45 @@
 import React, { Component } from 'react';
 import { ButtonBack, ButtonNext } from 'pure-react-carousel';
+import Typed from 'typed.js';
 
 class Page_1 extends Component {
-    render() {
-      return (
-        <div className="page_1">
-            <ButtonBack className="to-top">
-                <span className="fa fa-angle-double-up" aria-hidden="true"></span>
-            </ButtonBack>
-            <div className="container-fluid">
-              page1
-            </div>
-            <ButtonNext className="to-bottom">
-                <span className="fa fa-angle-double-down" aria-hidden="true"></span>
-            </ButtonNext>
-        </div>
-      );
+  componentDidMount() {
+    const options = {
+      strings: [
+        "React", "Spring Framework", "jpa"
+      ],
+      typeSpeed: 50,
+      startDelay: 500,
+      backSpeed: 100,
+      backDelay: 1300,
+      loop: true,
+      smartBackspace: true
     }
+    this.typed = new Typed(this.el, options);
+  }
+
+  componentWillUnmount() {
+    this.typed.destroy();
   }
   
-  export default Page_1;
+  render() {
+    return (
+      <div className="page_1">
+          <ButtonBack className="to-top">
+              <span className="fa fa-angle-double-up" aria-hidden="true"></span>
+          </ButtonBack>
+          <div className="container-fluid">
+            <div className="page-2-content">
+              <h4 className="page-2-h4">저는 &nbsp;
+              <strong id="typed" style={{ whiteSpace: "pre" }} ref={(el) => { this.el = el; }}></strong>할 줄 아는 <strong></strong>백엔드 개발자입니다.</h4>
+            </div>
+          </div>
+          <ButtonNext className="to-bottom">
+              <span className="fa fa-angle-double-down" aria-hidden="true"></span>
+          </ButtonNext>
+      </div>
+    );
+  }
+}
+  
+export default Page_1;
