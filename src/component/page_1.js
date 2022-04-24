@@ -6,7 +6,7 @@ class Page_1 extends Component {
   componentDidMount() {
     const options = {
       strings: [
-        "React", "Spring Framework", "jpa"
+        "React", "Spring", "jpa"
       ],
       typeSpeed: 50,
       startDelay: 500,

@@ -54,7 +54,7 @@ class App extends Component{
                       </div>
                       <ButtonNext className="to-bottom-first">
                         {this.offsetWidth()}
-                        <br/>
+                        <br />
                         <span className="fa fa-angle-double-down" aria-hidden="true"></span>
                       </ButtonNext>
 
@@ -77,10 +77,11 @@ class App extends Component{
             <Slide index={4}>
               <Page4/>
             </Slide>
+
           </Slider>
         </CarouselProvider>
     </div>
-    )
+    );
   }
 }
 
