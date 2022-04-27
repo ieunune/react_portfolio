@@ -6,7 +6,7 @@ class Page_1 extends Component {
   componentDidMount() {
     const options = {
       strings: [
-        "React", "Spring", "jpa"
+        "결제사"
       ],
       typeSpeed: 50,
       startDelay: 500,
@@ -31,7 +31,7 @@ class Page_1 extends Component {
           <div className="container-fluid">
             <div className="page-2-content">
               <h4 className="page-2-h4">저는 &nbsp;
-              <strong id="typed" style={{ whiteSpace: "pre" }} ref={(el) => { this.el = el; }}></strong>할 줄 아는 <strong></strong>백엔드 개발자입니다.</h4>
+              <strong id="typed" style={{ whiteSpace: "pre" }} ref={(el) => { this.el = el; }}></strong>경력이 있는 <strong></strong>풀스택 개발자입니다.</h4>
             </div>
           </div>
           <ButtonNext className="to-bottom">
