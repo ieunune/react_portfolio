@@ -27,12 +27,11 @@ class Page_2 extends Component {
                           &nbsp;Github
                         </button>
                       </form>
-                      <form target="_blank">
-                        <button onClick="window.open('../resource/final.html')" className="btn btn-info-link btn-outline-secondary">
+                      <button onClick={() => window.open('../resource/final.html', '_blank')}>[url 링크]</button>
+                      <button onClick="window.open('../resource/final.html')" className="btn btn-info-link btn-outline-secondary">
                           <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
                           &nbsp;Document
-                        </button>
-                      </form>
+                      </button>
                       <form action="https://youtu.be/qGeE3vKoyHs" target="_blank">
                         <button type="submit" className="btn btn-info-link btn-outline-secondary">
                           <span className="fa fa-youtube-play" aria-hidden="true"></span>
